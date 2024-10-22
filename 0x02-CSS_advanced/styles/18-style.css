@@ -363,24 +363,35 @@ template {
     --section-padding: 5rem 0; /* Padding for all sections */
     --section-header-padding: 0 0 3rem; /* Padding for section headers */
     --section-body-padding: 0 0 3rem; /* Padding for section body */
-    --section-footer-padding: 3rem 0 0; /* Padding for section footers */
+    --section-footer-padding: 3rem 0 0; /* Padding for section footer */
 }
 
-/* Section styles */
-section {
-    padding: var(--section-padding); /* Use the custom section padding */
+/* Navbar Customization */
+.navbar-menu {
+    float: right; /* Float to the right */
 }
 
-h2 {
-    text-align: var(--section-header-align); /* Use the custom alignment */
-    margin: var(--section-title-margin); /* Use the custom margin */
-    color: var(--section-title-color); /* Use the custom title color */
+nav {
+    margin: 0; /* Set margin to 0 */
+    padding: 0; /* Set padding to 0 */
+    text-align: center; /* Center align the text */
 }
 
-/* Footer styles */
-footer {
-    background-color: var(--color-dark-grey); /* Set footer background */
-    color: var(--color-white); /* Set footer text color */
-    padding: var(--section-footer-padding); /* Use the custom footer padding */
-    text-align: center; /* Center footer text */
-}
+    nav .nav-item {
+        font-family: var(--font-family-title); /* Set font family */
+        font-weight: var(--font-weight-bold); /* Set font weight */
+        font-size: var(--font-size-medium); /* Set font size */
+        letter-spacing: 0.04em; /* 4% of root element */
+        display: inline-block; /* Set display */
+        margin: 3rem 0 0; /* 3 times the root element on the bottom */
+    }
+
+    nav .nav-link {
+        display: block; /* Set display to block */
+        padding: calc(62.5% / 2) calc(62.5%); /* Set padding: half of root for top/bottom, equal to root for left/right */
+    }
+
+        nav .nav-link:hover {
+            color: var(--color-primary); /* Change foreground color on hover */
+        }
+
