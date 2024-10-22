@@ -364,7 +364,16 @@ template {
     --section-header-padding: 0 0 3rem; /* Padding for section headers */
     --section-body-padding: 0 0 3rem; /* Padding for section body */
     --section-footer-padding: 3rem 0 0; /* Padding for section footer */
+    /* Navigation item custom properties */
+    --nav-item-font-family: var(--font-family-title); /* Set font family for nav items */
+    --nav-item-font-weight: var(--font-weight-bold); /* Set font weight for nav items */
+    --nav-item-font-size: var(--font-size-medium); /* Set font size for nav items */
+    --nav-item-letter-spacing: 4%; /* Set letter spacing for nav items */
+    --nav-item-display: inline-block; /* Set display for nav items */
+    --nav-item-margin: 0 0 3rem 0; /* Set margin for nav items (3 times the root element on bottom, 0 elsewhere) */
+    --nav-item-link-hover: var(--color-primary); /* Set hover color for nav links */
 }
+
 
 /* Navbar Customization */
 .navbar-menu {
