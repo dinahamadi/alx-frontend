@@ -18,14 +18,14 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%; /* Sets the base font size to 10px (1rem = 10px) */
+    font-size: 62.5%;
 }
 
 body {
     color: var(--text-color);
     font-family: var(--font-family-base);
-    font-size: var(--font-size-medium); /* Sets body font size to 1.6rem (16px) */
-    font-weight: var(--font-weight-regular); /* Sets body font weight to regular (400) */
+    font-size: var(--font-size-medium);
+    font-weight: var(--font-weight-regular);
 }
 
 h1, h2, h3, h4, h5, h6 {
