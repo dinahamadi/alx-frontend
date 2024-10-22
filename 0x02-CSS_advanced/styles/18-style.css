@@ -378,18 +378,18 @@ template {
     text-align: center; /* Center align the text */
 }
 
-    nav .nav-item {
-        font-family: var(--font-family-title); /* Set font family */
-        font-weight: var(--font-weight-bold); /* Set font weight */
-        font-size: var(--font-size-medium); /* Set font size */
-        letter-spacing: 0.04em; /* 4% of root element */
-        display: inline-block; /* Set display */
-        margin: 3rem 0 0; /* 3 times the root element on the bottom */
+    .nav .nav-item {
+        font-family: var(--nav-item-font-family); /* Set font family */
+        font-weight: var(--nav-item-font-weight); /* Set font weight */
+        font-size: var(--nav-item-font-size); /* Set font size */
+        letter-spacing: var(--nav-item-letter-spacing); /* Set letter spacing */
+        display: var(--nav-item-display); /* Set display */
+        margin: var(--nav-item-margin); /* Set margin on all sides */
     }
 
-    nav .nav-link {
+    .nav .nav-link {
         display: block; /* Set display to block */
-        padding: calc(62.5% / 2) calc(62.5%); /* Set padding: half of root for top/bottom, equal to root for left/right */
+        padding: calc(0.5 * 1rem) calc(1rem); /* Set top/bottom padding to half of root element and left/right padding to the root element */
     }
 
         nav .nav-link:hover {
