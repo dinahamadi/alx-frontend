@@ -395,6 +395,8 @@ a:focus {
 }
 
 .container {
-    max-width: 960px; /* Set maximum width */
-    margin: 0 auto; /* Center container */
+    width: 960px; /* Set the width to 960px */
+    margin-left: auto; /* Automatically set left margin */
+    margin-right: auto; /* Automatically set right margin */
 }
+
