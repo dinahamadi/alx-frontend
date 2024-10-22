@@ -362,30 +362,25 @@ template {
     /* Custom padding properties */
     --section-padding: 5rem 0; /* Padding for all sections */
     --section-header-padding: 0 0 3rem; /* Padding for section headers */
-    --section-body-padding: 0 0 3rem; /* Padding for section body content */
+    --section-body-padding: 0 0 3rem; /* Padding for section body */
+    --section-footer-padding: 3rem 0 0; /* Padding for section footers */
 }
 
-/* Navigation Styles */
-.navbar-menu {
-    display: flex; /* Ensure menu items are displayed in a row */
-    justify-content: flex-end; /* Align menu items to the right */
+/* Section styles */
+section {
+    padding: var(--section-padding); /* Use the custom section padding */
 }
 
-.nav {
-    list-style: none; /* Remove bullet points from navigation items */
+h2 {
+    text-align: var(--section-header-align); /* Use the custom alignment */
+    margin: var(--section-title-margin); /* Use the custom margin */
+    color: var(--section-title-color); /* Use the custom title color */
 }
 
-.nav-item {
-    margin: 0 1rem; /* Space between navigation items */
+/* Footer styles */
+footer {
+    background-color: var(--color-dark-grey); /* Set footer background */
+    color: var(--color-white); /* Set footer text color */
+    padding: var(--section-footer-padding); /* Use the custom footer padding */
+    text-align: center; /* Center footer text */
 }
-
-.nav-link {
-    text-decoration: none; /* Remove underline from links */
-    color: var(--color-black); /* Set link color */
-    font-weight: var(--font-weight-bold); /* Make links bold */
-    transition: color 0.3s ease; /* Smooth color transition on hover */
-}
-
-    .nav-link:hover {
-        color: var(--color-primary); /* Change link color on hover */
-    }
