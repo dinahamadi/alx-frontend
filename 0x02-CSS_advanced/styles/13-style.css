@@ -28,6 +28,7 @@ html {
     --section-title-color: var(--color-black);
 }
 
+
 body {
     color: var(--text-color);
     font-family: var(--font-family-base);
