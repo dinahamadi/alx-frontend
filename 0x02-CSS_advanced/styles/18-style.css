@@ -371,9 +371,10 @@ template {
     float: right; /* Float to the right */
 }
 
-nav {
-    margin: 0; /* Set margin to 0 */
-    padding: 0; /* Set padding to 0 */
+.nav {
+    margin: 0; /* Set margin on all sides to 0 */
+    padding: 0; /* Set padding on all sides to 0 */
+    list-style-type: none; /* Ensure no list style is used */
     text-align: center; /* Center align the text */
 }
 
