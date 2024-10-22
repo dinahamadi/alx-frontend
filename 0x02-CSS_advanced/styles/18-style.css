@@ -392,7 +392,7 @@ template {
         padding: calc(0.5 * 1rem) calc(1rem); /* Set top/bottom padding to half of root element and left/right padding to the root element */
     }
 
-        nav .nav-link:hover {
-            color: var(--color-primary); /* Change foreground color on hover */
+        .nav .nav-link:hover {
+            color: var(--nav-item-link-hover); /* Set foreground color on hover */
         }
 
