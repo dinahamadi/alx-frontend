@@ -512,8 +512,8 @@ ul.row {
     text-align: right;
 }
 
-.row + .row {
+.row::after {
     content: "";
-    display: table-row; /* This creates a new row */
+    display: table; /* This creates a new row */
     clear: both; /* Ensures no floating elements on either side */
 }
